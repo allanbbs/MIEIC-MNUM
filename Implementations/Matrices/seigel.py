@@ -16,6 +16,6 @@ def seigel(x0,y0,z0,w0,numIt):
 		i+=1
 	return x,y,z,w
 
-
+#All function arguments but the last one refer to initial values for the variables
 print(seigel(2.12687,2.39858,3.99517,-3.73040,10))
 

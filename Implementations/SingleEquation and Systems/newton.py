@@ -25,6 +25,11 @@ def h(x,y):
 def k(x,y):
 	return -(fx(x,y)*g(x,y) - f(x,y)*gx(x,y) )
 
+def newton(func,dev,x,n):
+	for i in range(n):
+		x -= func(x) / dev(x)
+		print(x)
+
 def sisNewton(x,y,numIt):
 	i = 0
 	while(i<numIt):

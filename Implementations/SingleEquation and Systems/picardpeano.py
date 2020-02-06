@@ -25,14 +25,8 @@ def picardPeano(func,guess,n):
 		guess = func(guess)
 	print(guess)
 
-def newton(func,dev,x,n):
-	for i in range(n):
-		x -= func(x) / dev(x)
-		print(x)
-
 picardPeano(pp1x,-5,11)
 print("---")
 picardPeano(pp2x,3,11)
 print("---")
-newton(f,diff,-5,11)
 
